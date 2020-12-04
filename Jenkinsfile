@@ -8,7 +8,7 @@ pipeline{
               stage('Quality Gate Status Check'){
                   steps{
                       config {
-				  sh "${mavenBuild()}"
+				  sh "${commanJenkinsTemplate()}"
 			  }
 
                	 }  
