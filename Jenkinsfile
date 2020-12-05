@@ -7,7 +7,7 @@ pipeline{
 
               stage('Quality Gate Status Check'){
                   steps{
-                      config {
+                      config('config.yml') {
 				  sh "${commanJenkinsTemplate()}"
 			  }
 
